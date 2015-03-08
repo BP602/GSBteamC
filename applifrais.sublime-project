@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "."
+		}
+	],
+	"settings": {
+		"xdebug": {
+			"url": "http://local.dev/uwamp/",
+			"path_mapping": {"/var/www/local.dev/uwamp/" : "/home/bastien/code/uwamp/"}
+		}
+	}
+}

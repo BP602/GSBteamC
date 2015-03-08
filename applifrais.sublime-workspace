@@ -1,0 +1,1743 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"obtenirid",
+				"obtenirDetailVisiteur〔function〕"
+			],
+			[
+				"var",
+				"var_dump〔function〕"
+			],
+			[
+				"ptr",
+				"ptrFin"
+			],
+			[
+				"E",
+				"Element"
+			],
+			[
+				"plus",
+				"plusieurs"
+			],
+			[
+				"dathe",
+				"$dateheure〔variable〕"
+			],
+			[
+				"bs3-pan",
+				"bs3-panel:heading	bs3-panel-heading"
+			],
+			[
+				"bs3-col",
+				"bs3-col:2	bs3-col-2"
+			],
+			[
+				"bs3-butt",
+				"bs3-button:primary	bs3-button-primary"
+			],
+			[
+				"bs3-wel",
+				"bs3-well	bs3-well"
+			],
+			[
+				"getc",
+				"getChassisNom〔function〕"
+			],
+			[
+				"date",
+				"dateheure"
+			],
+			[
+				"fe",
+				"fetch_assoc"
+			],
+			[
+				"et",
+				"$etatAbonnement_sql〔variable〕"
+			],
+			[
+				"selected",
+				"$selectedComp〔variable〕"
+			],
+			[
+				"sql",
+				"$sqlQuery〔variable〕"
+			],
+			[
+				"Rs",
+				"RsDetails"
+			],
+			[
+				"for",
+				"for	for …"
+			],
+			[
+				"str_re",
+				"str_replace〔function〕"
+			],
+			[
+				"Disq",
+				"Disques"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"font",
+				"font-style: 〔property〕"
+			],
+			[
+				"bacgr",
+				"background-color"
+			],
+			[
+				"Ser",
+				"Services"
+			],
+			[
+				"Proce",
+				"Processeurs"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"lab",
+				"labels  (variable)"
+			],
+			[
+				"samp",
+				"sampleValues"
+			],
+			[
+				"Occupe",
+				"Occupe"
+			],
+			[
+				"afterF",
+				"afterFind"
+			],
+			[
+				"app",
+				"AppModel  (class)"
+			],
+			[
+				"new",
+				"newcontroller	Creates a new controller"
+			],
+			[
+				"code",
+				"codeIntervenant"
+			],
+			[
+				"bs3-nav",
+				"bs3-navbar	bs3-navbar"
+			],
+			[
+				"bs3-",
+				"bs3-button:primary	bs3-button-primary"
+			],
+			[
+				"bs3-l",
+				"bs3-label:success	bs3-label-success"
+			],
+			[
+				"button",
+				"bs3-button:primary	bs3-button-primary"
+			],
+			[
+				"max",
+				"max-width:   (property)"
+			],
+			[
+				"wi",
+				"width:   (property)"
+			],
+			[
+				"no",
+				"nom"
+			],
+			[
+				"un",
+				"uneRec"
+			],
+			[
+				"unN",
+				"unNbRecouv"
+			],
+			[
+				"unL",
+				"unLibMarque"
+			],
+			[
+				"nb",
+				"nbPannes"
+			],
+			[
+				"f",
+				"for	for"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"P",
+				"Période"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"paddin",
+				"padding-top"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"p",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-right"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "include/_bdGestionDonnees.lib.php",
+			"settings":
+			{
+				"buffer_size": 14732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "include/_gestionSession.lib.php",
+			"settings":
+			{
+				"buffer_size": 1975,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cConsultFichesFrais.php",
+			"settings":
+			{
+				"buffer_size": 7436,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/bastien/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 1079,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 401.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"comment",
+				"Toggle Comment"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previeew",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"set syntax mardo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"syntax markdo",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"mrdown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"mardown",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ma",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"sideba",
+				"View: Toggle Side Bar"
+			],
+			[
+				"jaa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"comma",
+				"Text Pastry: Command-Line"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"c#",
+				"Set Syntax: C#"
+			],
+			[
+				"sidebar",
+				"View: Toggle Side Bar"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"perview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prei",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previe",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"toggl",
+				"Toggle Comment"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle tba",
+				"View: Toggle Tabs"
+			],
+			[
+				"review",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"reveiw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"open files",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"markdow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"togg",
+				"Toggle Comment"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"convert t ",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"javasci",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"utf",
+				"ConvertToUTF8: Reload with Encoding"
+			],
+			[
+				"javascrit",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"tog",
+				"Toggle Comment"
+			],
+			[
+				"convert to tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"fold",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"convertto tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"syntax java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"con",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"convert to ",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"installer",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"convert ",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"commen",
+				"Toggle Block Comment"
+			],
+			[
+				"bracket",
+				"BracketHighlighter: Jump to Left Bracket"
+			],
+			[
+				"commet",
+				"Toggle Comment"
+			],
+			[
+				"indent tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"highvis",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"barck",
+				"BracketHighlighter: Toggle High Visibility Mode"
+			],
+			[
+				"inden",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"view ",
+				"View: Toggle Side Bar"
+			],
+			[
+				"jquery",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"indet",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remve",
+				"Package Control: Remove Channel"
+			],
+			[
+				"syntax c#",
+				"Set Syntax: C#"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"bs3 top",
+				"Snippet: bs3-navbar-fixed-top"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"update",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"synatx ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"bs3-la",
+				"Snippet: bs3-label-warning"
+			],
+			[
+				"cake",
+				"Preferences: Browse Packages"
+			],
+			[
+				"bs3- aler",
+				"Snippet: bs3-alert"
+			],
+			[
+				"bs3-navbar",
+				"Snippet: bs3-navbar"
+			],
+			[
+				"bs3 html",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"snippet : bs3",
+				"Snippet: bs3-well-lg"
+			],
+			[
+				"updae",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"omnisharp",
+				"OmniSharpSublime: Navigate To"
+			],
+			[
+				"mardown ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mardon",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"preview in b",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdown pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"sql",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"sql b",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"compa",
+				"GitGutter: Show Comparing Against"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"the",
+				"Themr: Random theme"
+			],
+			[
+				"package ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"brow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previww",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"chea",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"preview brow",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdo",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"madown",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"mdown",
+				"Markdown Preview: Save to HTML"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mdo",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"thmr",
+				"Themr: List themes"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"package",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"thm",
+				"Themr: List themes"
+			],
+			[
+				"theme",
+				"Themr: Next theme"
+			],
+			[
+				"mark",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"thme",
+				"Themr: List themes"
+			],
+			[
+				"them",
+				"Themr: Next theme"
+			],
+			[
+				"bs3 nab",
+				"Snippet: bs3-navbar-fixed-top"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"bs3",
+				"Snippet: bs3-jumbotron"
+			],
+			[
+				"css",
+				"Project: Save As"
+			],
+			[
+				"bs3 col",
+				"Snippet: bs3-col-4"
+			],
+			[
+				"bs3j",
+				"Snippet: bs3-jumbotron"
+			],
+			[
+				"bs3 nav",
+				"Snippet: bs3-navbar-fixed-top"
+			],
+			[
+				"jso",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prin",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: i",
+				"Package Control: Install Package"
+			],
+			[
+				"snippet bs3",
+				"Snippet: bs3-navbar"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"diffy",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			" import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/bastien/code/uwamp",
+		"/home/bastien/code/uwamp/include"
+	],
+	"file_history":
+	[
+		"/home/bastien/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings",
+		"/home/bastien/.config/sublime-text-3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/home/bastien/code/uwamp/include/_sommaire.inc.php",
+		"/home/bastien/code/heh",
+		"/home/bastien/code/uwamp/include/_pied.inc.html",
+		"/home/bastien/code/uwamp/include/_utilitairesEtGestionErreurs.lib.php",
+		"/home/bastien/code/uwamp/SQL_applifrais.sql",
+		"/home/bastien/code/uwamp/gsb_frais(1).sql",
+		"/home/bastien/code/uwamp/include/_init.inc.php",
+		"/home/bastien/code/uwamp/include/_fin.inc.php",
+		"/home/bastien/code/uwamp/include/_entete.inc.html",
+		"/home/bastien/code/uwamp/applifrais.sublime-project",
+		"/home/bastien/code/uwamp/cAccueil.php",
+		"/home/bastien/Vagrant/puphpet/config.yaml",
+		"/home/bastien/code/uwamp/include/_bdGestionDonnees.lib.php",
+		"/home/bastien/Docs/Algo.donnéesAbstraites.mdown",
+		"/home/bastien/code/phpinfo.php",
+		"/home/bastien/Docs/Droit8.mdown",
+		"/home/bastien/code/Project/gsb/applifrais/cSeDeconnecter.php",
+		"/home/bastien/Down/puphpet(3).zip",
+		"/tmp/Sketch en anglais sur l’E.M.D.R.txt",
+		"/tmp/for_translation_flock_master_fr.xml",
+		"/home/bastien/Torrents/House.of.Cards.S03E06.720p.WEBRip.DD5.1.x264-FGT/House.of.Cards.S03E06.720p.WEBRip.DD5.1.x264-FGT.nfo",
+		"/home/bastien/Docs/D6 La resposabilité des Prestataires.mdown",
+		"/home/bastien/Docs/EM4 Le système d'information (SI) et les processus",
+		"/tmp/devoir anglais.docx",
+		"/home/bastien/Down/puphpet(2).zip",
+		"/run/user/1000/gvfs/mtp:host=%5Busb%3A003%2C057%5D/Mémoire de stockage interne/CloudMagic/logs/CloudMagic2.log",
+		"/run/user/1000/gvfs/mtp:host=%5Busb%3A003%2C057%5D/Mémoire de stockage interne/CloudMagic/logs/CloudMagic1.log",
+		"/home/bastien/Docs/TextSecurePlaintextBackup.xml",
+		"/tmp/16.html",
+		"/tmp/ElixirSublime.log",
+		"/tmp/adb.log",
+		"/tmp/openrecovery-twrp-2.8.5.0-m7.img",
+		"/run/media/bastien/HDD/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/AppletConsoMonabee.cs",
+		"/home/bastien/results.log",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/generateur2.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/test.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/generateur.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/abonnement.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/index.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/config.php",
+		"/run/media/bastien/HDD/code/Monabee/Applet/serveurAPI/ajoutMesure.php",
+		"/home/bastien/Down/121069102789-19940810-B.pdf",
+		"/run/media/bastien/HDD/code/Monabee/kalimoni-backup/tdb_system.php",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/macs.cs",
+		"/home/bastien/code/Monabee/stage/Cdc_AppletConso.mdown",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/api.php",
+		"/home/bastien/code/Monabee/Applet/pwrdrain-gadget/PwrDrain.gadget/js/errors.js",
+		"/home/bastien/code/Monabee/REST/api.php",
+		"/home/bastien/code/Monabee/Applet/pwrdrain-gadget/PwrDrain.gadget/js/PwrDrain.js",
+		"/home/bastien/code/Monabee/REST/Rest.inc.php",
+		"/home/bastien/Down/Muhammad Sex Simulator 2015.zip",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/ScanMac.cs",
+		"/home/bastien/.vimrc",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/bin/Debug/AppletConsoMonabee.vshost.exe.manifest",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/bin/Debug/AppletConsoMonabee.vshost.application",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee.sln",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/bin/Debug/AppletConsoMonabee.vshost.exe.config",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/obj/Debug/DesignTimeResolveAssemblyReferences.cache",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/Form1.cs",
+		"/home/bastien/code/Vagrant/Vagrantfile",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/BeeNet.cs",
+		"/home/bastien/.config/sublime-text-3/Packages/User/C#.sublime-settings",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/Commande.cs",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/Revendeur.cs",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/DAOCommande.cs",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/DAORevendeur.cs",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/Passerelle.cs",
+		"/home/bastien/code/Csharp/Visual Studio 2010/Projects/ShopNBag/ShopNBag/Produit.cs",
+		"/home/bastien/code/Monabee/Applet/AppletConsoMonabee/AppletConsoMonabee/App.config",
+		"/home/bastien/code/Monabee/Applet/pingMsdn.cs",
+		"/home/bastien/code/Monabee/kalimoni-backup/histodd.php",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/Form1.cs",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/Form1.Designer.cs",
+		"/home/bastien/code/Monabee/kalimoni-backup/rapport/chap_header.php",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/obj/x86/Debug/Shutdown Event Handler.csproj.FileListAbsolute.txt",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/bin/Debug/Shutdown Event Handler.vshost.exe.manifest",
+		"/home/bastien/code/Monabee/kalimoni-backup/exploit/dedibox/EasyCharts35/api/help-doc.html",
+		"/home/bastien/code/Monabee/kalimoni-backup/commun/EasyCharts35/api/help-doc.html",
+		"/home/bastien/code/Monabee/kalimoni-backup/Work/EasyCharts35/api/help-doc.html",
+		"/home/bastien/code/Monabee/email_html/emial2.html",
+		"/home/bastien/code/Monabee/email_html/email.html",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/obj/x86/Debug/Shutdown_Event_Handler.Properties.Resources.resources",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/Shutdown Event Handler.csproj",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler/obj/x86/Debug/Shutdown_Event_Handler.Form1.resources",
+		"/home/bastien/code/Monabee/Shutdown Event Handler/Shutdown Event Handler.sln",
+		"/home/bastien/code/Monabee/kalimoni-backup/commun/js/modules/heatmap.js",
+		"/home/bastien/code/Monabee/histodd.php",
+		"/tmp/xa-EcckRq/tdb_system.php",
+		"/home/bastien/Pics/notepad.png",
+		"/home/bastien/Pics/notepad.jpg",
+		"/home/bastien/stage/Cdc_AppletConso2.mdown",
+		"/home/bastien/code/Monabee/kalimoni-backup/histocpu.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/histoalertes.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/historestart.php",
+		"/home/bastien/code/Monabee/Applet/HTTP.au3",
+		"/home/bastien/code/Monabee/kalimoni-backup/style.css",
+		"/home/bastien/code/Monabee/kalimoni-backup/tdb_system.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/tdb_evt.php",
+		"/home/bastien/code/Monabee/notes",
+		"/home/bastien/code/Monabee/kalimoni/tdb_system.php",
+		"/home/bastien/code/Monabee/kalimoni-backup (copier 1)/tdb_system.php",
+		"/home/bastien/code/Monabee/tdb_system.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/tdb_client.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_url.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_superviseur.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_partenaire.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_evt.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_client.php",
+		"/home/bastien/code/Monabee/Prospections/Tutoriel PHP  - DOM Parser-qPjsikmk4PY.mp4",
+		"/home/bastien/code/Monabee/kalimoni-backup/top.php",
+		"/home/bastien/code/Monabee/Prospections/index.php",
+		"/home/bastien/code/Monabee/kalimoni/incident-declare.php",
+		"/home/bastien/code/Monabee/kalimoni/top.php",
+		"/home/bastien/code/Monabee/kalimoni/tdb_client_old.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/commun/js/SMPageCentrale.js",
+		"/home/bastien/code/Monabee/kalimoni/histodd.php",
+		"/home/bastien/code/Monabee/kalimoni/Dispatch/histodd.php",
+		"/home/bastien/code/Monabee/Applet/histodd.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/includes/serveurmonitor.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/index.php",
+		"/home/bastien/code/Monabee/kalimoni-backup/commun/kalimoni.asp",
+		"/tmp/colors_light_blue_amber.xml",
+		"/tmp/spirit.cs",
+		"/tmp/tdb_system.php",
+		"/home/bastien/code/Monabee/kalimoni/includes/serveurmonitor.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/bastien/code/SLAM/ContexteGSB-V1.2/PPE/02-ApplicationFrais/Ressources/GSB_Appli/appliFrais",
+			"/home/bastien/www/cockpit",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"obtenirDetailVis",
+			"fraisForfait",
+			"ligneFraisHorsForfait",
+			"ligneFraisForfait",
+			"ficheFrais",
+			"nbElemnets",
+			"series(",
+			"categories(",
+			"categories",
+			"]},",
+			" ",
+			"}",
+			"S",
+			"MD_DMesure",
+			"MJ_DMesure",
+			"\"selected\"",
+			"$listCP[$i][\"selected\"]",
+			"SelectedComp",
+			"Error()",
+			"OpenDetails",
+			"[\"mesures\"]",
+			"$listCP[$i][\"mesures\"]",
+			"$listCP[$i][\"selected\"]",
+			"subtitle",
+			"Change",
+			"ChangeCP",
+			"height: 200,",
+			"height:",
+			"height",
+			"subtitle",
+			"title",
+			"275",
+			"Highcharts.setOptions({",
+			"\n										distance: -30,\n										useHtml: true,\n										format: '<b>{point.name}</b>',\n										style: {\n											color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'\n										",
+			"275",
+			"colors: [\"#6396bb\", \"#386491\"]",
+			"200",
+			"distance",
+			"><",
+			"<param",
+			"colors:[\"#03A9F4\", \"#0288D1\", \"#B3E5FC\", \"#FFC107\", \"#212121\", \"#727272\", \"#FFFFFF\", \"#B6B6B6\"]",
+			"colors: [\"#6396bb\", \"#669abe\", \"#386491\", \"#17374e\"]",
+			"colors",
+			"color",
+			"EEEEEEE",
+			"FFFFFF",
+			"�",
+			"verteck",
+			"electr",
+			"é",
+			"\"",
+			"planete",
+			"alcone",
+			"vincent",
+			"col",
+			"moz",
+			"num",
+			"echo \"",
+			"include",
+			"visiteur",
+			"bastien",
+			"pontet",
+			"113.160.154.47",
+			"kelsey",
+			"[",
+			">from=<",
+			"] <",
+			"]; from=<",
+			"] [",
+			"unknown[",
+			"@pontet.eu> to=<mike24@outlook.it>",
+			"30 ",
+			"Jul ",
+			": 504 5.5.2",
+			": Helo command rejected: need fully-qualified hostname; ",
+			" proto=ESMTP helo=",
+			" proto=ESMTP helo=<vztkbrhdrb>",
+			" proto=ESMTP helo=<vztkbrhdrb>\n",
+			": 450 4.7.1 Client host rejected: cannot find your hostname,",
+			"mail postfix/submission/smtpd",
+			"NOQUEUE: reject: RCPT",
+			"Jul 30 mail postfix/submission/smtpd[20847]: NOQUEUE: reject: RCPT",
+			"Jul 30 14:16:18 mail postfix/submission/smtpd[20847]: NOQUEUE: reject: RCPT",
+			"hr",
+			"DFAAAA",
+			"D46A6A",
+			".navbar",
+			"color: #",
+			"46054",
+			"ad5555",
+			".lead",
+			"#sec",
+			".lead",
+			"#4C06AB",
+			"lead",
+			"$_SERVER['DOCUMENT_ROOT']",
+			"griffith.blog",
+			"\"",
+			"<div id='allDescription'>",
+			"insert",
+			"bienvenue ",
+			"article",
+			"> ",
+			";",
+			"height: 75px;",
+			"padding-bo",
+			"border:3px DarkBlue groove;",
+			"margin-right: 50px;",
+			"\";",
+			"echo \"",
+			"echo\"",
+			"banner",
+			"table banner",
+			"table",
+			"banner",
+			"m2l",
+			"grant",
+			"create user",
+			"grant",
+			"create user",
+			"$db_login",
+			"$username"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"lignefraishorsforfait",
+			"lignefraisforfait",
+			"fichefrais",
+			"ficheFrais",
+			"fichefrais",
+			"nbElements",
+			"getSeries(",
+			"getCategories(",
+			"]},\n",
+			"",
+			"height: 220,",
+			"enabled: false\n							/*distance: -30,\n							useHtml: true,\n							format: '<b>{point.name}</b>',\n							style: {\n								color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'\n							*/",
+			"colors: [\"#386491\", \"#6396bb\"]",
+			">\n<",
+			"<param",
+			"<param\n",
+			"colors: [\"#6396bb\", \"#386491\", \"#17374e\"]",
+			"colors:[\"#03A9F4\", \"#0288D1\", \"#B3E5FC\", \"#FFC107\", \"#212121\", \"#727272\", \"#FFFFFF\", \"#B6B6B6\"]",
+			"EEEEEE",
+			"e",
+			"",
+			"numCherché",
+			" ",
+			"",
+			"B67474",
+			"DFAAAA",
+			"FFAAAA",
+			"AA3939",
+			"#sem",
+			"#945151",
+			"'",
+			"",
+			" ",
+			"\";\"",
+			"height: 55px;",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "include/_bdGestionDonnees.lib.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2700,
+								2700
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 966.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "include/_gestionSession.lib.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1351,
+								1351
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 244.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cConsultFichesFrais.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7436,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1463,
+								1463
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 565.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/bastien/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								175,
+								175
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": true,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 106.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 118.0
+	},
+	"output.git-pull":
+	{
+		"height": 92.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 92.0
+	},
+	"project": "applifrais.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"_",
+				"include/_sommaire.inc.php"
+			],
+			[
+				"s",
+				"ScanMac.cs"
+			],
+			[
+				"histo",
+				"kalimoni-backup/histodd.php"
+			],
+			[
+				"tdb_sys",
+				"kalimoni-backup/tdb_system.php"
+			],
+			[
+				"tdb",
+				"tdb_system.php"
+			],
+			[
+				"hi",
+				"histodd.php"
+			],
+			[
+				"index.",
+				"Prospections/index.php"
+			],
+			[
+				"top",
+				"kalimoni-backup/top.php"
+			],
+			[
+				"hid",
+				"histodd.php"
+			],
+			[
+				"histodd",
+				"histodd.php"
+			],
+			[
+				"notes",
+				"notes"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"restore_index":
+			{
+				"19":
+				{
+					"group": 0,
+					"index": 0
+				},
+				"20":
+				{
+					"group": 0,
+					"index": 1
+				},
+				"21":
+				{
+					"group": 0,
+					"index": 2
+				},
+				"36":
+				{
+					"group": 0,
+					"index": 3
+				},
+				"41":
+				{
+					"group": 0,
+					"index": 4
+				},
+				"44":
+				{
+					"group": 2,
+					"index": 1
+				},
+				"45":
+				{
+					"group": 1,
+					"index": 0
+				},
+				"46":
+				{
+					"group": 2,
+					"index": 0
+				},
+				"47":
+				{
+					"group": 1,
+					"index": 1
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.5,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.818476727786,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 195.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
