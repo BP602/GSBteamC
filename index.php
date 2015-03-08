@@ -1,1 +1,1 @@
-<a href="cAccueil.php">Accueil gsb</a>
+<a href="cAccueil.php">Accueil GSB</a>
