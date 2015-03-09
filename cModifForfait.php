@@ -4,6 +4,8 @@
  * @package default
  * @todo  RAS
  */
+date_default_timezone_set('UTC');
+
   $repInclude = './include/';
   require($repInclude . "_init.inc.php");
 
@@ -13,6 +15,14 @@
   }
   require($repInclude . "_entete.inc.html");
   require($repInclude . "_sommaire.inc.php");
+  
+if (estVisiteurConnecte() ) {
+          $idUser = obtenirIdUserConnecte() ;
+          
+          }
+if(obtenirTypeVisiteur($idUser)!=1){
+                header("Location: cAccueil.php");
+          }
   // affectation du mois courant pour la saisie des fiches de frais
   $mois = sprintf("%04d%02d", date("Y"), date("m"));
   // vérification de l'existence de la fiche de frais pour ce mois courant
@@ -60,7 +70,7 @@
 ?>
   <!-- Division principale -->
   <div id="contenu">
-      <h2>Modifier les montant des forfaits</h2>
+      <h2>Modifier les montants des forfaits</h2>
 <?php
   if ($etape == "validerSaisie" || $etape == "validerAjoutLigneHF" || $etape == "validerSuppressionLigneHF") {
       if (nbErreurs($tabErreurs) > 0) {
@@ -73,114 +83,86 @@
       }   
   }
       ?>            
-      <form action="" method="post">
+            <form action="" method="post">
       <div class="corpsForm">
-          <input type="hidden" name="etape" value="validerSaisie" />
+          <input type="hidden" name="etape" value="" />
           <fieldset>
-            <legend>Forfaits
+            <legend>Montants actuels des forfaits
             </legend>
-      <?php          
-            // demande de la requête pour obtenir la liste des éléments 
-            // forfaitisés du visiteur connecté pour le mois demandé
-            $req = obtenirReqEltsForfaitFicheFrais($mois, obtenirIdUserConnecte());
-            $idJeuEltsFraisForfait = mysql_query($req, $idConnexion);
-            echo mysql_error($idConnexion);
-            $lgEltForfait = mysql_fetch_assoc($idJeuEltsFraisForfait);
-            while ( is_array($lgEltForfait) ) {
-                $idFraisForfait = $lgEltForfait["idFraisForfait"];
-                $libelle = $lgEltForfait["libelle"];
-                $quantite = $lgEltForfait["quantite"];
-            ?>
             <p>
-              <label for="<?php echo $idFraisForfait ?>">* <?php echo $libelle; ?> : </label>
-              <input type="text" id="<?php echo $idFraisForfait ?>" 
-                    name="txtEltsForfait[<?php echo $idFraisForfait ?>]" 
-                    size="10" maxlength="5"
-                    title="Entrez la quantité de l'élément forfaitisé" 
-                    value="<?php echo $quantite; ?>" />
+                <?php
+                $requete = "SELECT libelle, montant FROM fraisforfait";
+                $reponse = mysql_query($requete); 
+                $nombrechamps = mysql_num_fields($reponse);
+                for ($j=0;$j<$nombrechamps;$j++)
+                {
+                    $nomchamp[] = mysql_field_name($reponse,$j);
+                }
+                echo "<table border ='1' style='width:28%; line-height: 1.8'>";
+                echo "<tr>";
+                for ($i=0;$i<$nombrechamps;$i++)
+                {
+                    echo ('<td>');
+                    echo ('<center>'.$nomchamp[$i].'</center>');
+                    echo ('</td>');
+
+                }
+                echo "</tr>";
+                while ($result = mysql_fetch_row($reponse))
+                {
+                    echo ('<tr>');
+                    for ($i=0;$i<$nombrechamps;$i++)
+                    {
+                        echo ('<td>');
+                        echo ('<center>'.$result[$i].'</center>');
+                        echo ('</td>');
+                    }
+                    echo ('</tr>');
+                }
+                echo "</table>";
+                ?>
+
             </p>
-            <?php        
-                $lgEltForfait = mysql_fetch_assoc($idJeuEltsFraisForfait);   
-            }
-            mysql_free_result($idJeuEltsFraisForfait);
-            ?>
           </fieldset>
-      </div>
-      <div class="piedForm">
-      <p>
-        <input id="ok" type="submit" value="Valider" size="20" 
-               title="Enregistrer les nouvelles valeurs des éléments forfaitisés" />
-        <input id="annuler" type="reset" value="Effacer" size="20" />
-      </p> 
-      </div>
-        
+      </div>        
       </form>
-  	<table class="listeLegere">
-  	   <caption>Descriptif des éléments hors forfait
-       </caption>
-             <tr>
-                <th class="date">Date</th>
-                <th class="libelle">Libellé</th>
-                <th class="montant">Montant</th>  
-                <th class="action">&nbsp;</th>              
-             </tr>
-<?php          
-          // demande de la requête pour obtenir la liste des éléments hors
-          // forfait du visiteur connecté pour le mois demandé
-          $req = obtenirReqEltsHorsForfaitFicheFrais($mois, obtenirIdUserConnecte());
-          $idJeuEltsHorsForfait = mysql_query($req, $idConnexion);
-          $lgEltHorsForfait = mysql_fetch_assoc($idJeuEltsHorsForfait);
-          
-          // parcours des frais hors forfait du visiteur connecté
-          while ( is_array($lgEltHorsForfait) ) {
-          ?>
-              <tr>
-                <td><?php echo $lgEltHorsForfait["date"] ; ?></td>
-                <td><?php echo filtrerChainePourNavig($lgEltHorsForfait["libelle"]) ; ?></td>
-                <td><?php echo $lgEltHorsForfait["montant"] ; ?></td>
-                <td><a href="?etape=validerSuppressionLigneHF&amp;idLigneHF=<?php echo $lgEltHorsForfait["id"]; ?>"
-                       onclick="return confirm('Voulez-vous vraiment supprimer cette ligne de frais hors forfait ?');"
-                       title="Supprimer la ligne de frais hors forfait">Supprimer</a></td>
-              </tr>
-          <?php
-              $lgEltHorsForfait = mysql_fetch_assoc($idJeuEltsHorsForfait);
-          }
-          mysql_free_result($idJeuEltsHorsForfait);
-?>
-    </table>
-      <form action="" method="post">
+      <form action="cModifForfait.php" method="post">
       <div class="corpsForm">
           <input type="hidden" name="etape" value="validerAjoutLigneHF" />
           <fieldset>
-            <legend>Nouvel élément hors forfait
+            <legend>Modification du montant du forfait
             </legend>
             <p>
-              <label for="txtDateHF">* Date : </label>
-              <input type="text" id="txtDateHF" name="txtDateHF" size="12" maxlength="10" 
-                     title="Entrez la date d'engagement des frais au format JJ/MM/AAAA" 
-                     value="<?php echo $dateHF; ?>" />
+                <?php 
+                    $sql = " SELECT libelle FROM fraisforfait"; 
+                    $result = mysql_query($sql) or die("Requête impossible"); 
+
+                    echo "<label>* Forfait : </label>
+                    <select name='bla'>"; 
+                    while ($row=mysql_fetch_array($result)){ 
+                        echo"<option>$row[0]</option>"; 
+                    } 
+                    echo"</select></form>"; ?> 
             </p>
             <p>
-              <label for="txtLibelleHF">* Libellé : </label>
-              <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="70" maxlength="100" 
-                    title="Entrez un bref descriptif des frais" 
-                    value="<?php echo filtrerChainePourNavig($libelleHF); ?>" />
-            </p>
-            <p>
-              <label for="txtMontantHF">* Montant : </label>
-              <input type="text" id="txtMontantHF" name="txtMontantHF" size="12" maxlength="10" 
-                     title="Entrez le montant des frais (le point est le séparateur décimal)" value="<?php echo $montantHF; ?>" />
+              <label for="txtLibelleHF">* Montant : </label>
+              <input type="text" id="montant"  size="20" name="montant" maxlength="100"/>
+              <center><table>
+                <input id="ajouter" type="submit" name="submit"  value="Valider" size="20"/>
+                <input id="effacer" type="reset" name="annuler" value="Annuler" size="20" />
+              </table></center>
+                <?php 
+                
+                if(isset($_POST["submit"])){
+                $libelle=lireDonneePost("bla", "");
+                $sql2 = " UPDATE fraisforfait SET montant=".$_POST['montant']." WHERE libelle='".$libelle."'"; 
+                $result2 = mysql_query($sql2) or die(mysql_error()); 
+                header("Refresh:0");
+                } ?>
+              
             </p>
           </fieldset>
       </div>
-      <div class="piedForm">
-      <p>
-        <input id="ajouter" type="submit" value="Ajouter" size="20" 
-               title="Ajouter la nouvelle ligne hors forfait" />
-        <input id="effacer" type="reset" value="Effacer" size="20" />
-      </p> 
-      </div>
-        
       </form>
   </div>
 <?php        
