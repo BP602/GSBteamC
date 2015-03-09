@@ -4,7 +4,6 @@
  * @package default
  * @todo  RAS
  */
-date_default_timezone_set('UTC');
   $repInclude = './include/';
   require($repInclude . "_init.inc.php");
 
@@ -80,23 +79,31 @@ date_default_timezone_set('UTC');
           <fieldset>
             <legend>Forfaits
             </legend>
+      <?php          
+            // demande de la requête pour obtenir la liste des éléments 
+            // forfaitisés du visiteur connecté pour le mois demandé
+            $req = obtenirReqEltsForfaitFicheFrais($mois, obtenirIdUserConnecte());
+            $idJeuEltsFraisForfait = mysql_query($req, $idConnexion);
+            echo mysql_error($idConnexion);
+            $lgEltForfait = mysql_fetch_assoc($idJeuEltsFraisForfait);
+            while ( is_array($lgEltForfait) ) {
+                $idFraisForfait = $lgEltForfait["idFraisForfait"];
+                $libelle = $lgEltForfait["libelle"];
+                $quantite = $lgEltForfait["quantite"];
+            ?>
             <p>
-              <label for="txtDateHF">* Date : </label>
-              <input type="text" id="txtDateHF" name="txtDateHF" size="12" maxlength="10" 
-                     title="Entrez la date d'engagement des frais au format JJ/MM/AAAA" 
-                     value="<?php echo $dateHF; ?>" />
+              <label for="<?php echo $idFraisForfait ?>">* <?php echo $libelle; ?> : </label>
+              <input type="text" id="<?php echo $idFraisForfait ?>" 
+                    name="txtEltsForfait[<?php echo $idFraisForfait ?>]" 
+                    size="10" maxlength="5"
+                    title="Entrez la quantité de l'élément forfaitisé" 
+                    value="<?php echo $quantite; ?>" />
             </p>
-            <p>
-              <label for="txtLibelleHF">* Libellé : </label>
-              <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="70" maxlength="100" 
-                    title="Entrez un bref descriptif des frais" 
-                    value="<?php echo filtrerChainePourNavig($libelleHF); ?>" />
-            </p>
-            <p>
-              <label for="txtMontantHF">* Montant : </label>
-              <input type="text" id="txtMontantHF" name="txtMontantHF" size="12" maxlength="10" 
-                     title="Entrez le montant des frais (le point est le séparateur décimal)" value="<?php echo $montantHF; ?>" />
-            </p>
+            <?php        
+                $lgEltForfait = mysql_fetch_assoc($idJeuEltsFraisForfait);   
+            }
+            mysql_free_result($idJeuEltsFraisForfait);
+            ?>
           </fieldset>
       </div>
       <div class="piedForm">
@@ -108,7 +115,39 @@ date_default_timezone_set('UTC');
       </div>
         
       </form>
-  	
+  	<table class="listeLegere">
+  	   <caption>Descriptif des éléments hors forfait
+       </caption>
+             <tr>
+                <th class="date">Date</th>
+                <th class="libelle">Libellé</th>
+                <th class="montant">Montant</th>  
+                <th class="action">&nbsp;</th>              
+             </tr>
+<?php          
+          // demande de la requête pour obtenir la liste des éléments hors
+          // forfait du visiteur connecté pour le mois demandé
+          $req = obtenirReqEltsHorsForfaitFicheFrais($mois, obtenirIdUserConnecte());
+          $idJeuEltsHorsForfait = mysql_query($req, $idConnexion);
+          $lgEltHorsForfait = mysql_fetch_assoc($idJeuEltsHorsForfait);
+          
+          // parcours des frais hors forfait du visiteur connecté
+          while ( is_array($lgEltHorsForfait) ) {
+          ?>
+              <tr>
+                <td><?php echo $lgEltHorsForfait["date"] ; ?></td>
+                <td><?php echo filtrerChainePourNavig($lgEltHorsForfait["libelle"]) ; ?></td>
+                <td><?php echo $lgEltHorsForfait["montant"] ; ?></td>
+                <td><a href="?etape=validerSuppressionLigneHF&amp;idLigneHF=<?php echo $lgEltHorsForfait["id"]; ?>"
+                       onclick="return confirm('Voulez-vous vraiment supprimer cette ligne de frais hors forfait ?');"
+                       title="Supprimer la ligne de frais hors forfait">Supprimer</a></td>
+              </tr>
+          <?php
+              $lgEltHorsForfait = mysql_fetch_assoc($idJeuEltsHorsForfait);
+          }
+          mysql_free_result($idJeuEltsHorsForfait);
+?>
+    </table>
       <form action="" method="post">
       <div class="corpsForm">
           <input type="hidden" name="etape" value="validerAjoutLigneHF" />
