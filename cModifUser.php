@@ -21,6 +21,9 @@
   // acquisition des quantités des éléments forfaitisés 
   // acquisition des données d'une nouvelle ligne hors forfait
   $libelleHF = lireDonneePost("txtLibelleHF","");
+  $libelleHF_cp = lireDonneePost("txtLibelleHF_CP","");
+  $libelleHF_ville = lireDonneePost("txtLibelleHF_Ville","");
+  $modifNom = lireDonneePost("modifNom","");
   $mdpHF = lireDonneePost("leMdpHF","");
   // structure de décision sur les différentes étapes du cas d'utilisation
   if ($etape != "demanderConsult" && $etape != "validerConsult"&& $etape != "validerConsult2") {
@@ -38,24 +41,31 @@
       <div class="corpsForm">
           <input type="hidden" name="etape" value="validerConsult" />
             <fieldset>
-              <legend>Modification de l'adresse utilisateur
+              <legend>Modification des informations utilisateurs
               </legend>
               <p>
                   <?php 
-                      $sql = " SELECT nom FROM visiteur"; 
-                      $resultNom = mysql_query($sql) or die("Requête impossible"); 
-
-                      ?> <label>* Visiteur : </label>
-                      <select name='nom'> 
-                      <?php while ($row=mysql_fetch_array($resultNom)){ ?>
-                          <option><?php echo $row[0] ?></option>
-                      <?php } ?>
-                      </select>
+                    $sql = " SELECT nom FROM visiteur"; 
+                    $resultNom = mysql_query($sql) or die("Requête impossible"); 
+                    
+                    ?> <label>* Visiteur : </label>
+                    <select name='nom'> 
+                    <?php while ($row=mysql_fetch_array($resultNom)){ ?>
+                        <option><?php echo $row[0] ?></option>
+                    <?php } ?>
+                    </select>
+              </p>
+              <p>
+                <label for="txtLibelleHF">* Nom : </label>
+                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
-                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" />
+                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" placeholder="Adresse"/>
+                <input type="text" id="txtLibelleHF_CP" name="txtLibelleHF_CP" size="20" maxlength="100" placeholder ="Code postal"/>
+                <input type="text" id="txtLibelleHF_Ville" name="txtLibelleHF_Ville" size="20" maxlength="100" placeholder="Ville"/>
               </p>
+              
             </fieldset>
         </div>
       <div class="piedForm">
@@ -73,9 +83,14 @@
             echo toStringErreurs($tabErreurs) ;
         }
         else {
+            if($libelleHF_cp == "" || $libelleHF_ville=="" || $libelleHF=="" || $modifNom== ""){
+                echo "Toutes les zones de textes ne sont pas remplies";
+            }
+            else{
                 $nomChoisi= lireDonneePost("nom","");
-                $sql="UPDATE visiteur SET adresse = '".$libelleHF."' WHERE nom = '".$nomChoisi."'";
+                $sql="UPDATE visiteur SET adresse = '".$libelleHF."', cp = '".$libelleHF_cp."', ville = '".$libelleHF_ville."', nom = '".$modifNom."' WHERE nom = '".$nomChoisi."'" ;
                 mysql_query($sql) or die(mysql_error()); 
+            }
         }
     }       
     ?>
