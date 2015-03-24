@@ -62,7 +62,6 @@ if ($etape == "validerConsult") {
 							?>    
 							<option value="<?php echo $idVis; ?>"<?php if ($visSaisi == $idVis) { ?> selected="selected"<?php } ?>><?php echo $nomVis; ?></option>
 							<?php
-							$lgVis = mysql_fetch_assoc($idJeuVis);
 						}
 						mysql_free_result($idJeuVis);
 						?>
@@ -81,7 +80,6 @@ if ($etape == "validerConsult") {
 								?>    
 								<option value="<?php echo $mois; ?>"<?php if ($moisSaisi == $mois) { ?> selected="selected"<?php } ?>><?php echo obtenirLibelleMois($noMois) . " " . $annee; ?></option>
 								<?php
-								$lgMois = mysql_fetch_assoc($idJeuMois);
 							}
 							mysql_free_result($idJeuMois);
 							?>
