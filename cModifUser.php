@@ -88,7 +88,6 @@
                 echo "Toutes les zones de textes ne sont pas remplies";
             }
             else{
-                $nomChoisi= lireDonneePost("nom","");
                 $sql="UPDATE visiteur SET adresse = '".$libelleHF."', cp = '".$libelleHF_cp."', ville = '".$libelleHF_ville."', nom = '".$modifNom."' WHERE id = '".$select."'" ;
                 mysql_query($sql) or die(mysql_error()); 
                 echo "Informations utilisateur modifié";
@@ -138,8 +137,7 @@
             echo toStringErreurs($tabErreurs) ;
         }
         else {
-                $nomChoisi= lireDonneePost("nom2","");
-                $sql="UPDATE visiteur SET mdp = '".$mdpHF."' WHERE nom = '".$nomChoisi."'";
+                $sql="UPDATE visiteur SET mdp = '".$mdpHF."' WHERE id = '".$select."'";
                 mysql_query($sql) or die(mysql_error()); 
                 echo "Mot de passe utilisateur modifié";
         }
