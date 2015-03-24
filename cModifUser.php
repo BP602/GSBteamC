@@ -25,6 +25,7 @@
   $libelleHF_ville = lireDonneePost("txtLibelleHF_Ville","");
   $modifNom = lireDonneePost("modifNom","");
   $mdpHF = lireDonneePost("leMdpHF","");
+  $select = lireDonnee("nom","");
   // structure de décision sur les différentes étapes du cas d'utilisation
   if ($etape != "demanderConsult" && $etape != "validerConsult"&& $etape != "validerConsult2") {
       $etape = "demanderConsult";        
@@ -88,7 +89,7 @@
             }
             else{
                 $nomChoisi= lireDonneePost("nom","");
-                $sql="UPDATE visiteur SET adresse = '".$libelleHF."', cp = '".$libelleHF_cp."', ville = '".$libelleHF_ville."', nom = '".$modifNom."' WHERE nom = '".$nomChoisi."'" ;
+                $sql="UPDATE visiteur SET adresse = '".$libelleHF."', cp = '".$libelleHF_cp."', ville = '".$libelleHF_ville."', nom = '".$modifNom."' WHERE id = '".$select."'" ;
                 mysql_query($sql) or die(mysql_error()); 
                 echo "Informations utilisateur modifié";
             }
