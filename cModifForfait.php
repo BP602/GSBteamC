@@ -91,8 +91,10 @@ if(obtenirTypeVisiteur($idUser)!=1){
             </legend>
             <p>
                 <?php
+				var_dump("CACA");
                 $requete = "SELECT libelle, montant FROM fraisforfait";
                 $reponse = mysql_query($requete); 
+				var_dump("COCO");
                 $nombrechamps = mysql_num_fields($reponse);
                 for ($j=0;$j<$nombrechamps;$j++)
                 {
