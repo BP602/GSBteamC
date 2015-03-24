@@ -104,6 +104,7 @@
                 $req = "SELECT `id` FROM visiteur";
                 $idJeuVis = mysql_query($req, $idConnexion);
                 $lgVis = mysql_fetch_assoc($idJeuVis);
+                
                 while ( is_array($lgVis) ) {
                     $idVis = $lgVis["id"];
                     if($idVis == $idUser){
@@ -113,9 +114,8 @@
                 }
                 
                 mysql_free_result($idJeuVis);
-                var_dump($ok, $idVis, $idUser);
                 if($ok == false){
-                    $message=  "L'ID est déjà utilisé";
+                    $message=  "L'ID est déjà utilisé, veuillez en utiliser un autre";
                 }
                 else{
                     $sql="INSERT INTO visiteur(id, nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, Niveau)
