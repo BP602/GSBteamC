@@ -114,6 +114,7 @@
                 }
                 
                 mysql_free_result($idJeuVis);
+                var_dump($ok, $idVis, $idUser);
                 if($ok == false){
                     $message=  "L'ID est déjà utilisé";
                 }
