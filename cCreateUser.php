@@ -36,7 +36,7 @@
 ?>
   <!-- Division principale -->
   <div id="contenu">
-      <h2>Modifier les données utilisateurs</h2>
+      <h2>Création utilisateur</h2>
 <?php
     // Montre ou cache la page en fonction du type de l'utilisateur.
 
