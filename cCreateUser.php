@@ -104,12 +104,13 @@
                 $req = "SELECT `id` FROM visiteur";
                 $idJeuVis = mysql_query($req, obtenirIdUserConnecte());
                 $lgVis = mysql_fetch_assoc($idJeuVis);
-                
+                var_dump($lgVis);
                 while ( is_array($lgVis) ) {
                     $idVis = $lgVis["id"];
                     if($idVis == $idUser){
                         $ok = false;
                     }
+                    var_dump($ok, $idVis, $idUser);
                     $lgVis = mysql_fetch_assoc($idJeuVis);
                 }
                 
