@@ -45,13 +45,13 @@
               </legend>
               <p>
                   <?php 
-                    $sql = " SELECT nom FROM visiteur"; 
+                    $sql = " SELECT id, nom FROM visiteur"; 
                     $resultNom = mysql_query($sql) or die("Requête impossible"); 
                     
                     ?> <label>* Visiteur : </label>
                     <select name='nom'> 
                     <?php while ($row=mysql_fetch_array($resultNom)){ ?>
-                        <option><?php echo $row[0] ?></option>
+                        <option value="<?php echo $row[0]?>"><?php echo $row[1] ?></option>
                     <?php } ?>
                     </select>
               </p>
