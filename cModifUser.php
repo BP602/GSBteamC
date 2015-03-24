@@ -90,6 +90,7 @@
                 $nomChoisi= lireDonneePost("nom","");
                 $sql="UPDATE visiteur SET adresse = '".$libelleHF."', cp = '".$libelleHF_cp."', ville = '".$libelleHF_ville."', nom = '".$modifNom."' WHERE nom = '".$nomChoisi."'" ;
                 mysql_query($sql) or die(mysql_error()); 
+                echo "Informations utilisateur modifié";
             }
         }
     }       
@@ -139,6 +140,7 @@
                 $nomChoisi= lireDonneePost("nom2","");
                 $sql="UPDATE visiteur SET mdp = '".$mdpHF."' WHERE nom = '".$nomChoisi."'";
                 mysql_query($sql) or die(mysql_error()); 
+                echo "Mot de passe utilisateur modifié";
         }
     }  
     ?>
