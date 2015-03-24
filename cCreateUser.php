@@ -117,7 +117,7 @@
                     $message=  "L'ID est déjà utilisé";
                 }
                 else{
-                    $sql="INSERT INTO visiteur(id, nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, types)
+                    $sql="INSERT INTO visiteur(id, nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, Niveau)
                         VALUES('".$idUser."', '".$nomUser."', '".$prenomUser."', '".$login."', '".$mdp."', '".$adresse."', '".$cp."', '".$ville."', '".$dateEmbauche."', 0)";
                     mysql_query($sql) or die(mysql_error()); 
                     $message= "Utilisateur crée";
