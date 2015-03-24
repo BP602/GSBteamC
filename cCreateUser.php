@@ -110,6 +110,7 @@
                     if($idVis == $idUser){
                         $ok = false;
                     }
+                    $lgVis = mysql_fetch_assoc($idJeuVis);
                 }
                 
                 mysql_free_result($idJeuVis);
