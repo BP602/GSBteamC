@@ -8,14 +8,14 @@ date_default_timezone_set('UTC');
 
   $repInclude = './include/';
   require($repInclude . "_init.inc.php");
-
+var_dump("CACA");
   // page inaccessible si visiteur non connecté
   if (!estVisiteurConnecte()) {
       header("Location: cSeConnecter.php");  
   }
   require($repInclude . "_entete.inc.html");
   require($repInclude . "_sommaire.inc.php");
-  
+  var_dump("CA");
 if (estVisiteurConnecte() ) {
           $idUser = obtenirIdUserConnecte() ;
           
@@ -31,6 +31,7 @@ if(obtenirTypeVisiteur($idUser)!=1){
   if ( !$existeFicheFrais ) {
       ajouterFicheFrais($idConnexion, $mois, obtenirIdUserConnecte());
   }
+  var_dump("CzezezACA");
   // acquisition des données entrées
   // acquisition de l'étape du traitement 
   $etape=lireDonnee("etape","demanderSaisie");
@@ -41,7 +42,7 @@ if(obtenirTypeVisiteur($idUser)!=1){
   $dateHF = lireDonnee("txtDateHF", "");
   $libelleHF = lireDonnee("txtLibelleHF", "");
   $montantHF = lireDonnee("txtMontantHF", "");
- 
+ var_dump("CACAezazeazeaeza");
   // structure de décision sur les différentes étapes du cas d'utilisation
   if ($etape == "validerSaisie") { 
       // l'utilisateur valide les éléments forfaitisés         
@@ -66,7 +67,8 @@ if(obtenirTypeVisiteur($idUser)!=1){
   }
   else { // on ne fait rien, étape non prévue 
   
-  }                                  
+  }     
+var_dump("CAezazCzeezezaA");  
 ?>
   <!-- Division principale -->
   <div id="contenu">
@@ -91,10 +93,8 @@ if(obtenirTypeVisiteur($idUser)!=1){
             </legend>
             <p>
                 <?php
-				var_dump("CACA");
                 $requete = "SELECT libelle, montant FROM fraisforfait";
                 $reponse = mysql_query($requete); 
-				var_dump("COCO");
                 $nombrechamps = mysql_num_fields($reponse);
                 for ($j=0;$j<$nombrechamps;$j++)
                 {
