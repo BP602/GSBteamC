@@ -160,7 +160,7 @@ if ($etape == "validerConsult") {
 					<?php
 					// demande de la requête pour obtenir la liste des éléments 
 					// forfaitisés du visiteur connecté pour le mois demandé
-					$req = obtenirReqEltsForfaitFicheFrais($moisSaisi, obtenirIdUserConnecte());
+					$req = obtenirReqEltsForfaitFicheFrais($moisSaisi, $detailsVisSaisi);
 					$idJeuEltsFraisForfait = mysql_query($req, $idConnexion);
 					echo mysql_error($idConnexion);
 					$lgEltForfait = mysql_fetch_assoc($idJeuEltsFraisForfait);
@@ -210,7 +210,7 @@ if ($etape == "validerConsult") {
 						<?php          
 						// demande de la requête pour obtenir la liste des éléments hors
 						// forfait du visiteur connecté pour le mois demandé
-						$req = obtenirReqEltsHorsForfaitFicheFrais($moisSaisi, obtenirIdUserConnecte());
+						$req = obtenirReqEltsHorsForfaitFicheFrais($moisSaisi, $detailsVisSaisi;
 						$idJeuEltsHorsForfait = mysql_query($req, $idConnexion);
 						$lgEltHorsForfait = mysql_fetch_assoc($idJeuEltsHorsForfait);
 						
