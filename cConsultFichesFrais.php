@@ -142,6 +142,7 @@ if ($etape == "validerConsult") {
 	if ($typeUser == 1){
 		//Details du visiteur slectionné
 		$detailsVisSaisi = obtenirDetailVisiteur($idConnexion, $visSaisi);
+		$tabFicheFrais = obtenirDetailFicheFrais($idConnexion, $moisSaisi, $visSaisi);
 
 		// demande et affichage des différents éléments (forfaitisés et non forfaitisés)
 		// de la fiche de frais demandée, uniquement si pas d'erreur détecté au contrôle
