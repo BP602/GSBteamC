@@ -1,13 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.2
+-- version 3.4.11.1deb2+deb7u1
 -- http://www.phpmyadmin.net
 --
 -- Client: localhost
--- Généré le: Jeu 20 Novembre 2014 à 17:03
--- Version du serveur: 5.6.11-log
--- Version de PHP: 5.3.25
+-- Généré le: Jeu 02 Avril 2015 à 17:08
+-- Version du serveur: 5.5.41
+-- Version de PHP: 5.4.39-0+deb7u2
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
 
@@ -19,8 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données: `gsb_frais`
 --
-CREATE DATABASE IF NOT EXISTS `gsb_frais` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `gsb_frais`;
 
 -- --------------------------------------------------------
 
@@ -68,8 +66,9 @@ CREATE TABLE IF NOT EXISTS `fichefrais` (
 INSERT INTO `fichefrais` (`idVisiteur`, `mois`, `nbJustificatifs`, `montantValide`, `dateModif`, `idEtat`) VALUES
 ('a131', '201410', 0, NULL, '2014-11-13', 'CL'),
 ('a131', '201411', 0, NULL, '2014-11-13', 'CR'),
-('a17', '201410', 0, NULL, '2014-11-10', 'CL'),
-('a17', '201411', 0, NULL, '2014-11-10', 'CR'),
+('a17', '201410', 0, 123.02, '2014-11-10', 'CL'),
+('a17', '201411', 0, NULL, '2015-03-06', 'CL'),
+('a17', '201503', 0, NULL, '2015-03-06', 'CR'),
 ('b13', '201410', 0, NULL, '2014-10-16', 'CR');
 
 -- --------------------------------------------------------
@@ -90,10 +89,10 @@ CREATE TABLE IF NOT EXISTS `fraisforfait` (
 --
 
 INSERT INTO `fraisforfait` (`id`, `libelle`, `montant`) VALUES
-('ETP', 'Forfait Etape', '110.00'),
-('KM', 'Frais Kilométrique', '0.62'),
-('NUI', 'Nuitée Hôtel', '80.00'),
-('REP', 'Repas Restaurant', '25.00');
+('ETP', 'Forfait Etape', 110.00),
+('KM', 'Frais Kilométrique', 0.62),
+('NUI', 'Nuitée Hôtel', 80.00),
+('REP', 'Repas Restaurant', 25.00);
 
 -- --------------------------------------------------------
 
@@ -147,10 +146,10 @@ CREATE TABLE IF NOT EXISTS `lignefraishorsforfait` (
 --
 
 INSERT INTO `lignefraishorsforfait` (`id`, `idVisiteur`, `mois`, `libelle`, `date`, `montant`, `Valide`) VALUES
-(3, 'a131', '201410', 'bonjour', '2014-09-12', '666.00', 1),
-(4, 'b13', '201410', 'Voyage scolaire', '2014-10-10', '666.66', 0),
-(6, 'b13', '201410', 'jugyj', '2014-10-10', '1000.00', 0),
-(7, 'a131', '201411', 'françois', '2014-11-10', '150.00', 0);
+(3, 'a131', '201410', 'bonjour', '2014-09-12', 666.00, 1),
+(4, 'b13', '201410', 'Voyage scolaire', '2014-10-10', 666.66, 0),
+(6, 'b13', '201410', 'jugyj', '2014-10-10', 1000.00, 0),
+(7, 'a131', '201411', 'françois', '2014-11-10', 150.00, 0);
 
 -- --------------------------------------------------------
 
@@ -177,10 +176,11 @@ CREATE TABLE IF NOT EXISTS `visiteur` (
 --
 
 INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, `ville`, `dateEmbauche`, `Niveau`) VALUES
-('a131', 'bob', 'Louis', 'lvillachane', 'jux7g', '8 rue des Charmes', '46000', 'Cahors', '2005-12-21', 0),
-('a17', 'Andre', 'David', 'dandre', 'oppg5', '1 rue Petit', '46200', 'Lalbenque', '1998-11-23', 1),
+('a131', 'Villachane', 'Louis', 'lvillachane', 'jux7g', '8 rue des Charmes', '46000', 'Cahors', '2005-12-21', 0),
+('a17', 'Andre', 'David', 'dandre', 'oppg5', 'sd', 'qsd', 'qsdf', '1998-11-23', 1),
 ('a55', 'Bedos', 'Christian', 'cbedos', 'gmhxd', '1 Rue des Lilas', '46250', 'Montcuq', '1995-01-12', 0),
 ('a93', 'Tusseau', 'Louis', 'ltusseau', 'ktp3s', '22 rue des Ternes', '46123', 'Gramat', '2000-05-01', 1),
+('az65', 'jhg', 'kjh', 'oiu', 'iuju', 'kiuj', 'ikj', 'ikj', '2015-03-14', 0),
 ('b13', 'Bentot', 'Pascal', 'pbentot', 'doyw1', '11 allée des Cerises', '46512', 'Bessines', '1992-07-09', 0),
 ('b16', 'Bioret', 'Luc', 'lbioret', 'hrjfs', '1 Avenue gambetta', '46000', 'Cahors', '1998-05-11', 0),
 ('b19', 'Bunisset', 'Francis', 'fbunisset', '4vbnd', '10 rue des Perles', '93100', 'Montreuil', '1987-10-21', 0),
@@ -203,7 +203,7 @@ INSERT INTO `visiteur` (`id`, `nom`, `prenom`, `login`, `mdp`, `adresse`, `cp`, 
 ('e52', 'Eynde', 'Valérie', 'veynde', 'i7sn3', '3 Grand Place', '13015', 'Marseille', '1999-11-01', 0),
 ('f21', 'Finck', 'Jacques', 'jfinck', 'mpb3t', '10 avenue du Prado', '13002', 'Marseille', '2001-11-10', 0),
 ('f39', 'Frémont', 'Fernande', 'ffremont', 'xs5tq', '4 route de la mer', '13012', 'Allauh', '1998-10-01', 0),
-('f4', 'Gest', 'Alain', 'agest', 'dywvt', '30 avenue de la mer', '13025', 'Berre', '1985-11-01', 0),
+('f4', 'Gest', 'Alain', 'agest', 'dywvt', '45 Boulevard General de gaulle', '69600', 'Oullins', '1985-11-01', 0),
 ('z88', 'Aubel', 'François', 'aubel', '789', 'rue de la pegre', '44000', 'bordeaux', '2014-11-04', 0);
 
 --
