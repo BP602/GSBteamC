@@ -20,6 +20,10 @@ SET time_zone = "+00:00";
 -- Base de données: `gsb_frais`
 --
 
+CREATE DATABASE IF NOT EXISTS `gsb_frais`;
+USE `gsb_frais`;
+
+
 -- --------------------------------------------------------
 
 --
