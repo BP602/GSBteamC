@@ -1,16 +1,18 @@
-tfs
+team fondation server
 	172.17.21.32
 	administrateur
 	btssio-slam-2015
 
 vmWindows8
-	ip?
+	172.17.21.60
 	slam
 	btssio-slam
 
 vmDebian
-	
-	
+	TeamC 172.17.21.14
+	Perso 172.17.21.24
+	root
+	mdp:
 	
 
 SQLserver
