@@ -275,7 +275,6 @@ function supprimerLigneHF($idCnx, $unIdLigneHF) {
 function refuserLigneHF($idCnx, $unIdLigneHF, $libellePrec) {
     $requete = "update lignefraishorsforfait set libelle='REFUSE : ".$libellePrec."' where id = " . $unIdLigneHF;
     mysql_query($requete, $idCnx);
-    echo $requete;
 }
 
 /**
@@ -322,7 +321,6 @@ function modifierEltsForfait($idCnx, $unMois, $unIdVisiteur, $desEltsForfait) {
                     . " where idVisiteur = '" . $unIdVisiteur . "' and mois = '"
                     . $unMois . "' and idFraisForfait='" . $idFraisForfait . "'";
         mysql_query($requete, $idCnx);
-        var_dump($requete);
     }
 }
 
