@@ -26,6 +26,7 @@
   $etape=lireDonnee("etape","demanderSaisie");
   // acquisition des quantités des éléments forfaitisés 
   $tabQteEltsForfait=lireDonneePost("txtEltsForfait", "");
+  var_dump($tabQteEltsForfait);
   // acquisition des données d'une nouvelle ligne hors forfait
   $idLigneHF = lireDonnee("idLigneHF", "");
   $dateHF = lireDonnee("txtDateHF", "");

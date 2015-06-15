@@ -132,7 +132,7 @@ function existeFicheFrais($idCnx, $unMois, $unIdVisiteur) {
         $ligne = mysql_fetch_assoc($idJeuRes);
         mysql_free_result($idJeuRes);
     }        
-    
+
     // si $ligne est un tableau, la fiche de frais existe, sinon elle n'exsite pas
     return is_array($ligne) ;
 }
@@ -266,6 +266,19 @@ function supprimerLigneHF($idCnx, $unIdLigneHF) {
 }
 
 /**
+ * Supprime une ligne hors forfait.
+ * Supprime dans la BD la ligne hors forfait d'id $unIdLigneHF
+ * @param resource $idCnx identifiant de connexion
+ * @param string $idLigneHF id de la ligne hors forfait
+ * @return void
+ */
+function refuserLigneHF($idCnx, $unIdLigneHF, $libellePrec) {
+    $requete = "update lignefraishorsforfait set libelle='REFUSE : ".$libellePrec."' where id = " . $unIdLigneHF;
+    mysql_query($requete, $idCnx);
+    echo $requete;
+}
+
+/**
  * Ajoute une nouvelle ligne hors forfait.
  * Ins�re dans la BD la ligne hors forfait de libell� $unLibelleHF du montant 
  * $unMontantHF ayant eu lieu � la date $uneDateHF pour la fiche de frais du mois
@@ -308,7 +321,8 @@ function modifierEltsForfait($idCnx, $unMois, $unIdVisiteur, $desEltsForfait) {
         $requete = "update lignefraisforfait set quantite = " . $quantite 
                     . " where idVisiteur = '" . $unIdVisiteur . "' and mois = '"
                     . $unMois . "' and idFraisForfait='" . $idFraisForfait . "'";
-      mysql_query($requete, $idCnx);
+        mysql_query($requete, $idCnx);
+        var_dump($requete);
     }
 }
 

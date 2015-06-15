@@ -15,14 +15,10 @@
           $lgUser = obtenirDetailVisiteur($idConnexion, $idUser);
           $typeUser = obtenirTypeUtilisateur();
           $nom = $lgUser['nom'];
-          $prenom = $lgUser['prenom'];            
+          $prenom = $lgUser['prenom'];
     ?>
-        <h2>
-    <?php  
-            echo $nom . " " . $prenom ;
-    ?>
-        </h2>
-        <h3>Visiteur médical</h3>        
+        <h2><?php echo $nom . " " . $prenom ; ?></h2>
+        <h3><?php if ($typeUser != 1) {echo "Visiteur Médical";}else{echo "Comptable";}?></h3>        
     <?php
        }
     ?>  
@@ -41,6 +37,7 @@
               <a href="cSaisieFicheFrais.php" title="Saisie fiche de frais du mois courant">Saisie fiche de frais</a>
            </li>
            <?php
+           //si l'utilisateur est un comptable
            if($typeUser == 1){ ?>
            <li class="smenu">
               <a href="cModifForfait.php" title="Modification des forfaits">Modification des forfaits</a>
@@ -51,10 +48,14 @@
            <li class="smenu">
               <a href="cCreateUser.php" title="Création utilisateurs">Création utilisateurs</a>
            </li>
-           <?php } ?>
            <li class="smenu">
-              <a href="cConsultFichesFrais.php" title="Consultation de mes fiches de frais">Mes fiches de frais</a>
+              <a href="cConsultFichesFrais.php" title="Validation de fiches de frais">Valider fiches de frais</a>
            </li>
+           <?php } else {?>
+            <li class="smenu">
+              <a href="cConsultFichesFrais.php" title="Consultation de mes fiches de frais">Mes fiches de frais</a>
+            </li>
+           <?php }?>
          </ul>
         <?php
           // affichage des éventuelles erreurs déjà détectées
