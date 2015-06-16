@@ -53,7 +53,7 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom" pattern="[a-z]"/>
+                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom" pattern="\[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Prenom : </label>
