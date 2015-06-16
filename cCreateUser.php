@@ -29,9 +29,6 @@
   $dateEmbauche = lireDonneePost("dateEmbauche","");
   $login = lireDonneePost("login","");
   $mdp = lireDonneePost("mdp","");
-  foreach($_POST['niveau'] as $chkbx){
-        $Niveau = $chkbx;						
-    }
   // structure de décision sur les différentes étapes du cas d'utilisation
   if ($etape != "demanderConsult" && $etape != "validerConsult"&& $etape != "validerConsult2") {
       $etape = "demanderConsult";        
@@ -56,11 +53,11 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom"/>
+                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom" pattern="[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Prenom : </label>
-                <input type="text" id="prenomUser" name="prenomUser" size="20" maxlength="100" placeholder="Prenom"/>
+                <input type="text" id="prenomUser" name="prenomUser" size="20" maxlength="100" placeholder="Prenom" pattern="[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
@@ -123,7 +120,9 @@
                     $message=  "L'ID est déjà utilisé, veuillez en utiliser un autre";
                 }
                 else{
-                    
+                    foreach($_POST['niveau'] as $chkbx){
+                        $Niveau = $chkbx;						
+                    }
                     $sql="INSERT INTO visiteur(id, nom, prenom, login, mdp, adresse, cp, ville, dateEmbauche, Niveau)
                         VALUES('".$idUser."', '".$nomUser."', '".$prenomUser."', '".$login."', '".$mdp."', '".$adresse."', '".$cp."', '".$ville."', '".$dateEmbauche."', '.$Niveau.')";
                     mysql_query($sql) or die(mysql_error()); 

@@ -36,6 +36,9 @@
            <li class="smenu">
               <a href="cSaisieFicheFrais.php" title="Saisie fiche de frais du mois courant">Saisie fiche de frais</a>
            </li>
+           <li class="smenu">
+              <a href="cAfficherUser.php" title="Affichage utilisateur">Affichage utilisateurs</a>
+           </li>
            <?php
            //si l'utilisateur est un comptable
            if($typeUser == 1){ ?>

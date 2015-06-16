@@ -51,20 +51,37 @@
                     
                     ?> <label>* Visiteur : </label>
                     <select name='nom'> 
-                    <?php while ($row=mysql_fetch_array($resultNom)){ ?>
-                        <option value="<?php echo $row[0]?>"><?php echo $row[1] ?></option>
-                    <?php } ?>
+                        <?php while ($row=mysql_fetch_array($resultNom)){ ?>
+                            <option value="<?php echo $row[0]?>"><?php echo $row[1] ?></option>
+                        <?php } ?>
                     </select>
+                    <?php
+                    $sql = "SELECT adresse, cp, ville FROM visiteur WHERE id = '".$select."'";
+
+                    // on lance la requête (mysql_query) et on impose un message d'erreur si la requête ne se passe pas bien (or die)
+                    $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
+
+                    // on va scanner tous les tuples un par un
+                    while ($data = mysql_fetch_array($req)) {
+                            // on affiche les résultats
+                            $rue = $data['adresse'];
+                            $ville = $data['cp'];
+                            $cp = $data['ville'];
+                    }
+                    mysql_free_result ($req);
+                    mysql_close (); 
+                    ?>
+                    
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom"/>
+                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom" pattern="[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
-                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" placeholder="Adresse"/>
-                <input type="text" id="txtLibelleHF_CP" name="txtLibelleHF_CP" size="20" maxlength="100" placeholder ="Code postal"/>
-                <input type="text" id="txtLibelleHF_Ville" name="txtLibelleHF_Ville" size="20" maxlength="100" placeholder="Ville"/>
+                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" placeholder="Adresse" value=<?php $rue ?>/>
+                <input type="text" id="txtLibelleHF_CP" name="txtLibelleHF_CP" size="20" maxlength="100" placeholder ="Code postal" value=<?php $ville ?>/>
+                <input type="text" id="txtLibelleHF_Ville" name="txtLibelleHF_Ville" size="20" maxlength="100" placeholder="Ville" value=<?php $cp ?>/>
               </p>
               
             </fieldset>
