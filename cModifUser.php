@@ -57,8 +57,7 @@
                     </select>
                     <?php
                     $sql = "SELECT adresse, cp, ville FROM visiteur WHERE id = '".$select."'";
-                    echo $sql;
-                    echo $select;
+
                     // on lance la requête (mysql_query) et on impose un message d'erreur si la requête ne se passe pas bien (or die)
                     $req = mysql_query($sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysql_error());
 
@@ -76,7 +75,7 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom" pattern="[a-z]"/>
+                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom" pattern="\^[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
