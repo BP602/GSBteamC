@@ -53,11 +53,11 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom" pattern="\[a-z]"/>
+                <input type="text" id="nomUser" name="nomUser" size="20" maxlength="100" placeholder="Nom"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Prenom : </label>
-                <input type="text" id="prenomUser" name="prenomUser" size="20" maxlength="100" placeholder="Prenom" pattern="[a-z]"/>
+                <input type="text" id="prenomUser" name="prenomUser" size="20" maxlength="100" placeholder="Prenom" />
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
