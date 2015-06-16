@@ -41,9 +41,9 @@
                     }
                     
                     ?>
-                         <?php echo $id ?><p>, </p>
-                         <?php echo $nom ?><p>, </p>
-                         <?php echo $prenom ?><p>, </p>
+                         <?php echo $id ?><label>, </label>
+                         <?php echo $nom ?><label>, </label>
+                         <?php echo $prenom ?><label>, </label>
                          <?php echo $role ?><br />
                     <?php
             }
