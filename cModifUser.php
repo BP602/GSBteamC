@@ -79,9 +79,9 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
-                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" placeholder="Adresse" value=<?php $rue ?>/>
-                <input type="text" id="txtLibelleHF_CP" name="txtLibelleHF_CP" size="20" maxlength="100" placeholder ="Code postal" value=<?php $ville ?>/>
-                <input type="text" id="txtLibelleHF_Ville" name="txtLibelleHF_Ville" size="20" maxlength="100" placeholder="Ville" value=<?php $cp ?>/>
+                <input type="text" id="txtLibelleHF" name="txtLibelleHF" size="20" maxlength="100" placeholder="Adresse" value="<?php $rue ?>"/>
+                <input type="text" id="txtLibelleHF_CP" name="txtLibelleHF_CP" size="20" maxlength="100" placeholder ="Code postal" value="<?php $ville ?>"/>
+                <input type="text" id="txtLibelleHF_Ville" name="txtLibelleHF_Ville" size="20" maxlength="100" placeholder="Ville" value="<?php $cp ?>"/>
               </p>
               
             </fieldset>
