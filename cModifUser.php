@@ -75,7 +75,7 @@
               </p>
               <p>
                 <label for="txtLibelleHF">* Nom : </label>
-                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom" pattern="\^[a-z]"/>
+                <input type="text" id="modifNom" name="modifNom" size="20" maxlength="100" placeholder="Nom" pattern="[a-z]"/>
               </p>
               <p>
                 <label for="txtLibelleHF">* Adresse : </label>
