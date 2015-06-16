@@ -41,10 +41,10 @@
                     }
                     
                     ?>
-                         <?php echo $id ?>
-                         <?php echo $nom ?>
-                         <?php echo $prenom ?>
-                         <?php echo $role ?>
+                         <?php echo $id ?><p>, </p>
+                         <?php echo $nom ?><p>, </p>
+                         <?php echo $prenom ?><p>, </p>
+                         <?php echo $role ?><br />
                     <?php
             }
             mysql_free_result ($req);
